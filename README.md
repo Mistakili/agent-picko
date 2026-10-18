@@ -10,7 +10,7 @@
 - Look up a saved lead by name
 - Update details the caller actually gave
 - Create a follow-up reminder
-- Ask to be connected to a person
+- Ask for a person, and the request is saved for a callback
 - Keep the voice API key on the server and give the browser a short-lived token
 
 ## Run locally

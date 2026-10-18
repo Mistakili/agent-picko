@@ -9,7 +9,7 @@ export const SYSTEM_PROMPT = [
   "When asked about a saved lead, use get_lead.",
   "When the user adds or corrects details, use update_lead and only change fields they explicitly provide.",
   "When asked to remember a follow-up, use create_followup.",
-  "If the caller explicitly asks for a human or the request needs human assistance, tell them you will connect them and use transfer_to_human with a short reason and summary.",
+  "If the caller explicitly asks for a human, use transfer_to_human with a short reason and summary. Tell them the request is saved and someone will call them back. Do not say a person is already on the line.",
   "Never invent saved data, confirmations, or successful transfers. Keep spoken replies short and natural."
 ].join(" ");
 
@@ -58,7 +58,7 @@ const SPECS = [
   },
   {
     name: "transfer_to_human",
-    description: "Transfer the caller to a human real-estate agent when they explicitly ask for a person or the request needs human assistance. Tell the caller you are connecting them, then call this tool with a short reason and summary.",
+    description: "Save a callback request when the caller explicitly asks for a person. Tell them the request is saved and someone will call them back. Do not say the call has already been transferred.",
     properties: {
       reason: { type: "string" },
       summary: { type: "string" }
