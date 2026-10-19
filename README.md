@@ -2,6 +2,8 @@
 
 **Talk to your CRM.** A voice-first real-estate CRM. Speak a new lead, look someone up, correct their details, or set a follow-up.
 
+The next owner’s setup, cost, and limits are in [HANDOVER.md](HANDOVER.md).
+
 ## What you can do
 
 - Create an account and keep a private book of leads, follow-ups, and handoffs
